@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(request: NextRequest) {
   const reference = request.nextUrl.searchParams.get("reference");
-  const secretKey = process.env.pk_live_42bb308fafea8408a1277f46340a5978a92aaa97;
+  const secretKey = process.env.hello;
 
   const redirectTo = (status: string) =>
     NextResponse.redirect(

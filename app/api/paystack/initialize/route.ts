@@ -18,7 +18,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const secretKey = process.env.pk_live_42bb308fafea8408a1277f46340a5978a92aaa97;
+    const secretKey = process.env.hello;
 
     if (!secretKey) {
       return NextResponse.json(
