@@ -31,7 +31,7 @@ export async function POST(request: Request) {
     const amountInKobo = amount * 100;
 
     const baseUrl =
-      process.env. || new URL(request.url).origin;
+      process.env.NEXT_PUBLIC_SITE_URL || new URL(request.url).origin;
 
     const response = await fetch(
       "https://api.paystack.co/transaction/initialize",

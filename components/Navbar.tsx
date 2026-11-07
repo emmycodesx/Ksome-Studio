@@ -35,18 +35,18 @@ export default function Navbar() {
           >
             Home
           </Link>
-          <a
+          <Link
             className="text-sm text-[#888] transition-colors duration-300 hover:text-black"
             href="/#works"
           >
             Our Work
-          </a>
-          <a
+          </Link>
+          <Link
             className="text-sm text-[#888] transition-colors duration-300 hover:text-black"
             href="/#about-us"
           >
             About Us
-          </a>
+          </Link>
           <Link
             className="text-sm text-[#888] transition-colors duration-300 hover:text-black"
             href="/donate"
